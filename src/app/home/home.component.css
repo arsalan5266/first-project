@@ -1,0 +1,87 @@
+.home-container{
+display: flex;
+.all-movies{
+    width: 75%;
+    min-height: calc(100vh - 80px);
+    border-right: 1px solid #fdc827;
+    padding: 1.25rem 2.5rem;
+    font-family: "Roboto",sans-serif;
+    .top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h4{
+            text-transform: uppercase;
+            font-weight: bold;
+            border-left: 5px solid #ff9900;
+            padding: 0.625rem;
+        }
+        .view-all{
+            color: #ff9900;
+            cursor: pointer;
+        }
+    }
+    .movies-thumbnails{
+        display: flex;
+        /* justify-content: space-between; */
+        /* flex-wrap: wrap; */
+        width: 60%;
+        .movie {
+            width: 27%;
+
+            padding-left: 0.938rem;
+           .cover{
+          
+            img{
+                border-radius: 5px;
+                width: 100%;
+                
+            }
+           }
+           .details{
+            width: 9.688rem;
+            .name {
+                font-weight: bold;
+                height: 3.125rem;
+                margin-top: 5px;
+                cursor: pointer;
+            }
+           }
+        }
+    }
+}
+.popular-movies{
+    width: 25%;
+    min-height: calc(100vh - 80px);
+    font-family: "Roboto",sans-serif;
+    h4{
+        text-transform: uppercase;
+        font-weight: bold;
+        border-left: 5px solid #ff9900;
+        padding: 0.625rem;
+    }
+    .movies{
+        .movie{
+            margin-bottom: 1.25rem;
+            margin-top: 1.875rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .name{
+                font-weight: bold;
+                cursor: pointer;
+            }
+            .rating{
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+        .view-all{
+         color: #ff9900;
+         text-align: right;
+         margin-top: 1.875rem;
+         cursor: pointer;
+        }
+    }
+}
+}
